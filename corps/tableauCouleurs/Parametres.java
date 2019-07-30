@@ -27,8 +27,8 @@ public class Parametres implements Serializable{
   
   public Parametres() {     
     //Image
-    largpx = 300;
-    hautpx = 200;
+    largpx = 600;
+    hautpx = 400;
     larg= 5;
     ratio = larg/largpx;
     haut = ratio * hautpx;    

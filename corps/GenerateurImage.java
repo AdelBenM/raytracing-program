@@ -57,11 +57,11 @@ public abstract class GenerateurImage implements Programmable{
 			premImage.setBlanc(iblanc);
 
 		BufferedImage off_Image = premImage.getImage();
-		try {
+		/*try {
 			File outputfile = new File("saved.png");
 			ImageIO.write(off_Image, "png", outputfile);
 		} catch (IOException e) {
-		}
+		}*/
 		System.out.println((System.nanoTime() - startTime) / 1000000 + "ms de lecture");
 		return off_Image;
 	}

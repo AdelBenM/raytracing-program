@@ -99,7 +99,7 @@ public abstract class GenerateurImageScene extends GenerateurImage implements Ac
 	public JTabbedPane ongletsEdition() {
 		JTabbedPane res = new JTabbedPane();
 		res.add("Scene", new OngletScene(this));
-		res.addTab("Parametres", new OngletParam(this));
+		//res.addTab("Parametres", new OngletParam(this));
 		return res;
 	}
 	

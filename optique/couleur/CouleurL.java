@@ -132,9 +132,11 @@ public class CouleurL implements Serializable{
 			return this;
 		else if (i==0)
 			return lux;
-		else {		
-			int newRGB = (int) (( i*coul.getRGB() + lux.i*lux.coul.getRGB() )/(lux.i+i) );	//la moyenne arithmétique des couleurs
-			Color resultante = new Color( newRGB);
+		else {
+			//Simple moyenne arithmetique des couleurs, ponderee par l intensite des sources
+			Color resultante = new Color( (int) (( i*coul.getRed() + lux.i*lux.coul.getRed() )/(lux.i+i) ),
+											(int) (( i*coul.getGreen() + lux.i*lux.coul.getGreen() )/(lux.i+i) ),
+											(int) (( i*coul.getBlue() + lux.i*lux.coul.getBlue() )/(lux.i+i) ) );				
 			return new CouleurL( resultante , i+lux.i);
 		}
 	}

@@ -27,10 +27,7 @@ public class DoubleJoystick extends JPanel{
     
   }
   
-  @Override
-public void setEnabled(boolean bool) {
-    
-  }
+
   
   public int AFaire(Button b) {
     if (b==trans.fleches[0])

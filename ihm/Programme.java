@@ -43,7 +43,7 @@ public class Programme implements ActionListener{
 			//Cube c =new Cube(Point3.origine.plus(new R3(0,4,0)), 3, M3.id, Color.red );
 			//c.tourner(R3.uz,Math.PI/4);
 			//r.ajouter(c);
-			sc.ajouter(new SourcePonctuelleIsotrope("Source 1",Point3.origine.plus(new R3(0,1,1)) , 1000));
+			sc.ajouter(new SourcePonctuelleIsotrope("Source 1",Point3.origine.plus(new R3(0,1,2)) , 1000));
 			pr=new Raytracing(sc);
 			f1=new Fenetre1(pr);
 			break;
@@ -66,7 +66,7 @@ public class Programme implements ActionListener{
 			sc2.ajouter(miroir4);
 			sc2.ajouter(miroir5);
 			ParametresMecatro param = new ParametresMecatro();
-			param.aggrandir(3);
+			param.aggrandir(1);
 			pr = new Mecatro(sc2, param);
 			f1=new Fenetre1(pr);
 			break;
